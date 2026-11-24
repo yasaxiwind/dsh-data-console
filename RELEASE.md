@@ -1,4 +1,4 @@
-# Release checklist
+﻿# Release checklist
 
 Everything below runs from this directory. Nothing here publishes on its own;
 the steps that upload are marked **publish**.
@@ -11,9 +11,9 @@ absent from the manifest until you own the URLs):
 ```sh
 npm pkg set author.name="Your Name"
 npm pkg set repository.type=git \
-  repository.url="git+https://github.com/<you>/dsh-data-console.git" \
-  homepage="https://github.com/<you>/dsh-data-console#readme" \
-  bugs.url="https://github.com/<you>/dsh-data-console/issues"
+  repository.url="git+https://github.com/yasaxiwind/dsh-data-console.git" \
+  homepage="https://github.com/yasaxiwind/dsh-data-console#readme" \
+  bugs.url="https://github.com/yasaxiwind/dsh-data-console/issues"
 ```
 
 Then rebuild the marketplace index so it carries the repository and homepage:
@@ -81,7 +81,7 @@ git init
 git add .
 git commit -m "dsh-data-console 1.0.0"
 git branch -M main
-git remote add origin git@github.com:<you>/dsh-data-console.git
+git remote add origin git@github.com:yasaxiwind/dsh-data-console.git
 git push -u origin main
 git tag v1.0.0 && git push origin v1.0.0
 ```
@@ -95,7 +95,7 @@ publishes to npm when the `NPM_TOKEN` secret exists.
 - **Self-hosted DSH index**: `market/index.json` is a format-1 plugin market
   index. Host it at any https URL (raw GitHub, jsDelivr, GitHub Pages) and add it
   under **Plugins → Discover → Index sources**. jsDelivr form:
-  `https://cdn.jsdelivr.net/gh/<you>/dsh-data-console@v1.0.0/market/index.json`
+  `https://cdn.jsdelivr.net/gh/yasaxiwind/dsh-data-console@v1.0.0/market/index.json`
 - **awesome-dsh-plugin catalog**: open a PR to
   <https://github.com/awesome-dsh-plugin/awesome-dsh-plugin> with one entry for
   `dsh-data-console`. The dsh-market app, dshmarket.com and

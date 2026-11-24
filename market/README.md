@@ -1,4 +1,4 @@
-# Plugin market index
+﻿# Plugin market index
 
 `index.json` is a format-1 DSH plugin market index for this package. It is
 generated, not hand-written:
@@ -18,9 +18,9 @@ icon-size limit and the required fields.
 Any https URL works. Common choices:
 
 - **jsDelivr** (recommended; fast in China and cached):
-  `https://cdn.jsdelivr.net/gh/<you>/dsh-data-console@v1.0.0/market/index.json`
+  `https://cdn.jsdelivr.net/gh/yasaxiwind/dsh-data-console@v1.0.0/market/index.json`
 - **raw GitHub**:
-  `https://raw.githubusercontent.com/<you>/dsh-data-console/v1.0.0/market/index.json`
+  `https://raw.githubusercontent.com/yasaxiwind/dsh-data-console/v1.0.0/market/index.json`
 - **GitHub Pages**: publish this `market/` directory and use its URL.
 
 ## Add it to DSH

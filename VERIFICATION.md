@@ -219,3 +219,13 @@ Screenshot: `browser-screenshots/dc-110-sidebar-inset.png`.
 | Live profile | Re-installed as the linked bundle `dsh-data-console` 1.0.0 (row `include:data-console`); the previous `@local/dsh-data-console` link was removed. |
 | CI | `.github/workflows/ci.yml` (syntax + sidecar + verify + pack on push/PR) and `.github/workflows/release.yml` (tag `v*` → `npm publish --provenance`). |
 | Docs | README has npm/tarball/local install and distribution channels; DETAIL.md / DETAIL.zh.md expanded; CHANGELOG, RELEASE checklist, SECURITY and LICENSE added. |
+
+### Published artifacts (2026-11-24)
+
+| Item | Result |
+|---|---|
+| npm | `dsh-data-console@1.0.0` published; registry `dist-tags.latest = 1.0.0`, tarball SHA-1 `857e440568ddbeb1ab242aab7bc95ea61a1cc1de` (69,087 bytes). |
+| npm install | `dsh plugin --profile npm-test add dsh-data-console@1.0.0` → `+ dsh-data-console 1.0.0`, 19 files installed, composition valid. |
+| GitHub | https://github.com/yasaxiwind/dsh-data-console — `main` pushed, tag `v1.0.0`, Release with `dsh-data-console-1.0.0.tgz` asset (same SHA-1). |
+| CI / release workflow | `CI` success on push; `Release` workflow success and skipped publishing because `npm view` already reported `1.0.0`. |
+| Storefront assets | `screenshots.json` + three JPEG screenshots under `docs/screenshots/` (sidebar, table filter, chart). |

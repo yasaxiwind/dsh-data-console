@@ -1,4 +1,8 @@
-# dsh-data-console
+﻿# dsh-data-console
+
+[![npm](https://img.shields.io/npm/v/dsh-data-console)](https://www.npmjs.com/package/dsh-data-console)
+[![license](https://img.shields.io/github/license/yasaxiwind/dsh-data-console)](LICENSE)
+[![CI](https://github.com/yasaxiwind/dsh-data-console/actions/workflows/ci.yml/badge.svg)](https://github.com/yasaxiwind/dsh-data-console/actions/workflows/ci.yml)
 
 A local data console inside [DeepSeek Harness](https://github.com/deepseek-ai): open a CSV/Excel file from the conversation, understand it, query it, chart it and export it — and give the agent a small, bounded set of tools over the same data.
 
@@ -106,7 +110,7 @@ See [RELEASE.md](RELEASE.md) for the npm, GitHub, plugin-market and catalog step
 - **DSH plugin market index** — [`market/index.json`](market/index.json) is a
   format-1 index. Host it on any https URL (for example raw GitHub, jsDelivr or
   GitHub Pages) and add it in **Plugins → Discover → Index sources**:
-  `https://cdn.jsdelivr.net/gh/<you>/dsh-data-console@v1.0.0/market/index.json`.
+  `https://cdn.jsdelivr.net/gh/yasaxiwind/dsh-data-console@v1.0.0/market/index.json`.
 - **awesome-dsh-plugin catalog** — the curated catalog behind the
   [dsh-market](https://dshmarket.com) app and
   [awesome-dsh-plugin.com](https://awesome-dsh-plugin.com); listing there makes
