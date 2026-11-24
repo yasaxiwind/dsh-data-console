@@ -1,4 +1,4 @@
-﻿# Release checklist
+# Release checklist
 
 Everything below runs from this directory. Nothing here publishes on its own;
 the steps that upload are marked **publish**.
@@ -97,9 +97,21 @@ publishes to npm when the `NPM_TOKEN` secret exists.
   under **Plugins → Discover → Index sources**. jsDelivr form:
   `https://cdn.jsdelivr.net/gh/yasaxiwind/dsh-data-console@v1.0.0/market/index.json`
 - **awesome-dsh-plugin catalog**: open a PR to
-  <https://github.com/awesome-dsh-plugin/awesome-dsh-plugin> with one entry for
-  `dsh-data-console`. The dsh-market app, dshmarket.com and
-  awesome-dsh-plugin.com pick it up automatically.
+  <https://github.com/awesome-dsh-plugin/awesome-dsh-plugin> that adds exactly
+  one file, `data/plugins/yasaxiwind__dsh-data-console.yml`:
+
+  ```yaml
+  url: https://github.com/yasaxiwind/dsh-data-console
+  name: yasaxiwind/dsh-data-console
+  category: tools
+  description:
+    en: 'Local data console: open CSV/Excel/JSON, profile columns, sort and filter the table, run SQL with joins, draw six chart types and export CSV/XLSX/PNG, with five bounded agent tools.'
+    zh: '本地数据工作台：打开 CSV/Excel/JSON，查看列画像、排序筛选、SQL 多表查询、六种图表与 CSV/XLSX/PNG 导出，并向 agent 提供五个有界工具。'
+  ```
+
+  The catalog requires the repository to be at least one day old and to carry the
+  `dsh-plugin` topic; CI re-checks stale submissions, so a PR opened earlier can
+  pass after the age requirement is met. Do not hand-edit the generated READMEs.
 - **DSH Discover**: any user can add the index URL above; no central submission
   is required.
 
