@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2 — 2026-11-24
+
+Screenshots refreshed on the default DSH theme with no third-party skin or
+widgets, using a synthetic example dataset instead of a personal file. Added
+`examples/regional-sales.csv` and `examples/README.md`. No runtime changes.
+
 ## 1.0.1 — 2026-11-24
 
 Docs-only republish: final install links, npm/GitHub badges, the real repository

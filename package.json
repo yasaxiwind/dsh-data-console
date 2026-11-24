@@ -1,6 +1,6 @@
 {
   "name": "dsh-data-console",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Data console for DeepSeek Harness: open CSV/Excel files, inspect column profiles, page through tables, run SQL, draw charts and export, with bounded agent tools.",
   "keywords": [
     "dsh",

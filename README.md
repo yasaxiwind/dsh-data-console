@@ -18,6 +18,9 @@ Everything is read on your machine. No dataset is uploaded anywhere.
 
 ![A bar chart drawn from the loaded dataset](docs/screenshots/chart.jpg)
 
+The screenshots use [examples/regional-sales.csv](examples/regional-sales.csv),
+a synthetic 240-row dataset included in this repository (no real customer data).
+
 ## Install
 
 ### From npm (recommended)
