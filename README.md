@@ -1,4 +1,4 @@
-# dsh-data-console
+﻿# dsh-data-console
 
 [![npm](https://img.shields.io/npm/v/dsh-data-console)](https://www.npmjs.com/package/dsh-data-console)
 [![license](https://img.shields.io/github/license/yasaxiwind/dsh-data-console)](LICENSE)
@@ -18,7 +18,7 @@ Everything is read on your machine. No dataset is uploaded anywhere.
 
 ![A bar chart drawn from the loaded dataset](docs/screenshots/chart.jpg)
 
-The screenshots use [examples/regional-sales.csv](examples/regional-sales.csv),
+The screenshots use [examples/regional-sales.csv](https://github.com/yasaxiwind/dsh-data-console/blob/main/examples/regional-sales.csv),
 a synthetic 240-row dataset included in this repository (no real customer data).
 
 ## Install
@@ -34,7 +34,7 @@ In **DSH Desktop**, open **Settings → Plugins → + Add plugin** and enter `ds
 ### From a tarball
 
 ```sh
-dsh plugin --profile <profile> add ./dsh-data-console-1.0.0.tgz
+dsh plugin --profile <profile> add ./dsh-data-console-1.0.2.tgz
 ```
 
 ### From this folder (development)
@@ -121,13 +121,13 @@ See [RELEASE.md](RELEASE.md) for the npm, GitHub, plugin-market and catalog step
 - **DSH plugin market index** — [`market/index.json`](market/index.json) is a
   format-1 index. Host it on any https URL (for example raw GitHub, jsDelivr or
   GitHub Pages) and add it in **Plugins → Discover → Index sources**:
-  `https://cdn.jsdelivr.net/gh/yasaxiwind/dsh-data-console@v1.0.0/market/index.json`.
+  `https://cdn.jsdelivr.net/gh/yasaxiwind/dsh-data-console@v1.0.2/market/index.json`.
 - **awesome-dsh-plugin catalog** — the curated catalog behind the
   [dsh-market](https://dshmarket.com) app and
   [awesome-dsh-plugin.com](https://awesome-dsh-plugin.com); listing there makes
   the plugin discoverable in the community market.
-- **GitHub Release tarball** — `dsh-data-console-1.0.0.tgz` attached to the
-  `v1.0.0` release, installable with `dsh plugin add ./…tgz`.
+- **GitHub Release tarball** — `dsh-data-console-1.0.2.tgz` attached to the
+  `v1.0.2` release, installable with `dsh plugin add ./…tgz`.
 
 See [RELEASE.md](RELEASE.md) for the exact publish steps.
 

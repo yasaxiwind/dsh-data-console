@@ -1,4 +1,4 @@
-# Release checklist
+﻿# Release checklist
 
 Everything below runs from this directory. Nothing here publishes on its own;
 the steps that upload are marked **publish**.
@@ -95,7 +95,7 @@ publishes to npm when the `NPM_TOKEN` secret exists.
 - **Self-hosted DSH index**: `market/index.json` is a format-1 plugin market
   index. Host it at any https URL (raw GitHub, jsDelivr, GitHub Pages) and add it
   under **Plugins → Discover → Index sources**. jsDelivr form:
-  `https://cdn.jsdelivr.net/gh/yasaxiwind/dsh-data-console@v1.0.0/market/index.json`
+  `https://cdn.jsdelivr.net/gh/yasaxiwind/dsh-data-console@v1.0.2/market/index.json`
 - **awesome-dsh-plugin catalog**: open a PR to
   <https://github.com/awesome-dsh-plugin/awesome-dsh-plugin> that adds exactly
   one file, `data/plugins/yasaxiwind__dsh-data-console.yml`:
