@@ -33,8 +33,19 @@ jobs:
       - name: Verify package
         run: npm run verify:package
 
+      - name: Check whether this version is already published
+        id: published
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          if npm view "dsh-data-console@${version}" version >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Publish to npm
         # Provenance needs the repository field set by RELEASE.md step 0.
+        if: steps.published.outputs.exists == 'false'
         run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
