@@ -1,0 +1,4 @@
+# Data console bundle layer: one Host row plus its Client module.
+- insert:
+    - id: data-console
+      name: 'dsh-data-console'

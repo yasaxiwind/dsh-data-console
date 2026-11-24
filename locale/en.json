@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Data console",
+    "description": "Adds a Data button to the composer that opens a console for the current session: load CSV/TSV/TXT/XLSX/XLSM/JSON files, see column profiles and memory use, page, sort and filter the table with a SQL WHERE expression, query it with SQL (joining other open datasets), draw six chart types, and export CSV/XLSX or a 2x PNG into the last opened folder. The panel can be dragged; releasing near the right edge docks it as a sidebar that shrinks the conversation (resize its edge, or toggle with the Dock button), and the layout is remembered. Pick a folder in the OS dialog to list its data files in the sidebar, pick a single file, or drop a file onto the panel; imported files are copied to a local cache. Datasets open at shutdown are reopened after a restart, and the last 20 files are listed under Recent. The agent gets five bounded tools (data_open, data_list, data_profile, data_query, data_export); a dataset opened by a session is listed first there and tagged as another session's elsewhere. Everything is read locally and nothing is uploaded; SQL runs on a read-only copy. Default limits: 256 MB per file, 100 MB for dropped/selected files, 5,000,000 loaded rows (change them in the gear settings); legacy .xls must be saved as .xlsx; chart point counts are capped.",
+    "detail": "docs/DETAIL.md"
+  }
+}

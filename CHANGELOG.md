@@ -1,0 +1,52 @@
+# Changelog
+
+## 1.0.0 — 2026-11-24
+
+First public release. `dsh-data-console` turns the conversation into a local
+data workbench for DeepSeek Harness: open a file, understand it, query it,
+chart it and export it, without uploading the data.
+
+### Added
+
+- **Composer panel** — a `数据` / `Data` button opens a console for the current
+  session. The panel can be dragged, docks into a right sidebar near the right
+  edge (or with the Dock button), resizes between 280 and 560 px, and remembers
+  mode, position and width. In the desktop app it starts below the window title
+  bar so the native window controls never cover its buttons.
+- **Files** — CSV/TSV/TXT/XLSX/XLSM/JSON by path or through the OS file/folder
+  dialogs, plus drag-and-drop import into a local content-addressed cache.
+  Reopening the same path (and sheet) reuses one dataset.
+- **Profile** — rows, columns, dtypes, missing values, unique counts,
+  ranges/top values and in-memory size.
+- **Table** — 50 rows per page, click-to-sort, and a SQL `WHERE` filter.
+- **SQL** — the loaded table as `data`, every other open dataset as `ds<id>`,
+  so multiple tables can be joined; results page in the panel.
+- **Charts** — line, bar, scatter, histogram, box and heatmap, drawn as SVG and
+  exportable as CSV or a 2× PNG.
+- **Export** — CSV (UTF-8 with BOM) or XLSX for the table or a query result.
+- **Agent tools** — `data_open`, `data_list`, `data_profile`, `data_query` and
+  `data_export`, with bounded output.
+- **Sessions, restore and recent** — per-session dataset ordering, automatic
+  restore of open datasets after restart, and a 20-entry recent list.
+- **Settings** — file-size and row limits, default chart type/aggregation and
+  an optional Python path.
+- **Resilience** — the Python sidecar may idle-exit; the Host reopens datasets
+  under their existing ids on the next table/chart/SQL/export call.
+
+### Verified
+
+- 14 Python sidecar protocol tests.
+- Route smoke checks for open, dedupe, meta, preview, filter, query, upload,
+  settings and close.
+- UI verification across profile, table, SQL, charts, export, settings,
+  pickers, drag/drop, sidebar docking and idle sidecar recovery
+  (see `VERIFICATION.md`).
+
+### Known limits
+
+- Datasets are held in memory; a restart clears the list (files are untouched).
+- Legacy `.xls` is rejected; save it as `.xlsx`.
+- SQL runs on an in-memory read-only SQLite copy, not the original file.
+- Charts cap points per series; heatmaps and box plots cap groups.
+- Python with `pandas` and `openpyxl` is required (the bundled DSH runtime is
+  used when present).

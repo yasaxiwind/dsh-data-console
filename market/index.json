@@ -1,0 +1,86 @@
+{
+  "format": 1,
+  "title": {
+    "en": "dsh-data-console",
+    "zh": "数据工作台"
+  },
+  "description": {
+    "en": "A local data console for DeepSeek Harness: CSV/Excel, profiles, SQL, charts and export.",
+    "zh": "DeepSeek Harness 的本地数据工作台：CSV/Excel、列画像、SQL、图表与导出。"
+  },
+  "metadata": {
+    "categories": {
+      "data": {
+        "title": {
+          "en": "Data",
+          "zh": "数据"
+        }
+      }
+    },
+    "labels": {
+      "local-first": {
+        "title": {
+          "en": "Local-first",
+          "zh": "本地优先"
+        }
+      },
+      "agent-tools": {
+        "title": {
+          "en": "Agent tools",
+          "zh": "Agent 工具"
+        }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-data-console",
+      "title": {
+        "en": "Data console",
+        "zh": "数据工作台"
+      },
+      "description": {
+        "en": "Adds a Data button to the composer that opens a console for the current session: load CSV/TSV/TXT/XLSX/XLSM/JSON files, see column profiles and memory use, page, sort and filter the table with a SQL WHERE expression, query it with SQL (joining other open datasets), draw six chart types, and export CSV/XLSX or a 2x PNG into the last opened folder. The panel can be dragged; releasing near the right edge docks it as a sidebar that shrinks the conversation (resize its edge, or toggle with the Dock button), and the layout is remembered. Pick a folder in the OS dialog to list its data files in the sidebar, pick a single file, or drop a file onto the panel; imported files are copied to a local cache. Datasets open at shutdown are reopened after a restart, and the last 20 files are listed under Recent. The agent gets five bounded tools (data_open, data_list, data_profile, data_query, data_export); a dataset opened by a session is listed first there and tagged as another session's elsewhere. Everything is read locally and nothing is uploaded; SQL runs on a read-only copy. Default limits: 256 MB per file, 100 MB for dropped/selected files, 5,000,000 loaded rows (change them in the gear settings); legacy .xls must be saved as .xlsx; chart point counts are capped.",
+        "zh": "在输入框加一个「数据」按钮，打开当前会话的数据工作台：加载 CSV/TSV/TXT/XLSX/XLSM/JSON，查看列画像与内存占用，分页浏览、排序并按 WHERE 条件筛选，用 SQL 查询（多表可 JOIN），生成六种图表，并能把 CSV/XLSX 或 2 倍 PNG 导出到最近打开的文件夹。面板可拖动；靠近右侧会自动吸附为侧边栏（不遮挡对话，可拖边调宽，也可点按钮切换），布局会被记住。可以从系统对话框选择文件夹（左侧列出其中文件）或单个文件，也可以把文件直接拖进面板打开；导入的文件复制到本机缓存。上次打开的数据集会在重启后自动恢复，最近 20 个文件列在侧栏可一键重开。agent 获得五个有界工具（data_open、data_list、data_profile、data_query、data_export）；会话打开的数据集在本会话优先展示，在别的会话标记为「其他会话」。数据只在本机读取，不会上传；SQL 以只读副本执行。默认上限：单文件 256 MB、拖入/选择文件 100 MB、读入 5,000,000 行（可在工作台 ⚙ 设置里修改）；旧版 .xls 需另存为 .xlsx；图表点数有上限。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJEYXRhIGNvbnNvbGUiPgogIDxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSI1NiIgaGVpZ2h0PSI1NiIgcng9IjE0IiBmaWxsPSIjNGQ2YmZlIi8+CiAgPHJlY3QgeD0iMTQiIHk9IjE2IiB3aWR0aD0iMzYiIGhlaWdodD0iMzIiIHJ4PSI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxwYXRoIGQ9Ik0xNCAyN2gzNk0xNCAzOGgzNk0yNyAxNnYzMiIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIuNCIgb3BhY2l0eT0iMC44NSIvPgogIDxyZWN0IHg9IjI5IiB5PSIyOSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjYiIHJ4PSIyIiBmaWxsPSIjZmZkMTY2Ii8+CiAgPGNpcmNsZSBjeD0iNDYiIGN5PSI0NiIgcj0iNyIgZmlsbD0iI2ZmZmZmZiIvPgogIDxwYXRoIGQ9Ik01MSA1MWw1IDUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIzLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K",
+      "author": "yasaxiwind",
+      "homepage": "https://github.com/yasaxiwind/dsh-data-console#readme",
+      "repository": {
+        "url": "https://github.com/yasaxiwind/dsh-data-console"
+      },
+      "metadata": {
+        "category": "data",
+        "keywords": [
+          "dsh",
+          "dsh-plugin",
+          "deepseek-harness",
+          "data-console",
+          "csv",
+          "excel",
+          "sql",
+          "charts",
+          "pandas",
+          "data-analysis"
+        ],
+        "labels": [
+          "local-first",
+          "agent-tools"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1795510485,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.5"
+          }
+        }
+      ]
+    }
+  ]
+}

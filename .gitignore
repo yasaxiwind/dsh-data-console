@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Local test artifacts and scratch copies
+browser-screenshots/
+scratch/
+*.tgz
+coverage/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.*
+
+# Logs
+*.log
