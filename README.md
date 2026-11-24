@@ -1,4 +1,4 @@
-﻿# dsh-data-console
+# dsh-data-console
 
 [![npm](https://img.shields.io/npm/v/dsh-data-console)](https://www.npmjs.com/package/dsh-data-console)
 [![license](https://img.shields.io/github/license/yasaxiwind/dsh-data-console)](LICENSE)
@@ -9,6 +9,14 @@ A local data console inside [DeepSeek Harness](https://github.com/deepseek-ai): 
 Everything is read on your machine. No dataset is uploaded anywhere.
 
 ![Data console: a dataset list, column profile cards, a sortable table and a bar chart](docs/preview.svg)
+
+## Screenshots
+
+![The console docked as a right sidebar next to the conversation](docs/screenshots/sidebar.jpg)
+
+![Table filtered with a SQL WHERE expression](docs/screenshots/table-filter.jpg)
+
+![A bar chart drawn from the loaded dataset](docs/screenshots/chart.jpg)
 
 ## Install
 

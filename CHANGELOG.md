@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1 — 2026-11-24
+
+Docs-only republish: final install links, npm/GitHub badges, the real repository
+and jsDelivr URLs, storefront screenshots and the release checklist. No runtime
+or manifest behaviour changed.
+
 ## 1.0.0 — 2026-11-24
 
 First public release. `dsh-data-console` turns the conversation into a local
