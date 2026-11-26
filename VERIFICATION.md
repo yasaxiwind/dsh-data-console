@@ -1,6 +1,6 @@
 ﻿# Data console — M1 verification
 
-Date: 2026-11-24 · DSH 0.2.2-rc.5 (Desktop profile) · plugin 1.0.2
+Date: 2026-11-24 · DSH 0.2.2-rc.5 (Desktop profile) · plugin 1.0.3
 
 ## Installed state
 
