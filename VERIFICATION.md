@@ -1,4 +1,4 @@
-﻿# Data console — M1 verification
+# Data console — M1 verification
 
 Date: 2026-11-24 · DSH 0.2.2-rc.5 (Desktop profile) · plugin 1.0.3
 
@@ -224,9 +224,9 @@ Screenshot: `browser-screenshots/dc-110-sidebar-inset.png`.
 
 | Item | Result |
 |---|---|
-| npm | `dsh-data-console@1.0.0` published; registry `dist-tags.latest = 1.0.0`, tarball SHA-1 `857e440568ddbeb1ab242aab7bc95ea61a1cc1de` (69,087 bytes). |
+| npm | `dsh-data-console` 1.0.0 → 1.0.3 published; registry `dist-tags.latest = 1.0.3`. 1.0.3 is 22 files, 254,057 bytes, SHA-1 `3725724399fbb37f917ee6baf72b8e6c9cd0c30e`. |
 | npm install | `dsh plugin --profile npm-test add dsh-data-console@1.0.0` → `+ dsh-data-console 1.0.0`, 19 files installed, composition valid. |
-| GitHub | https://github.com/yasaxiwind/dsh-data-console — `main` pushed, tag `v1.0.0`, Release with `dsh-data-console-1.0.0.tgz` asset (same SHA-1). |
+| GitHub | https://github.com/yasaxiwind/dsh-data-console — `main` pushed, tags `v1.0.0` … `v1.0.3`, each Release carries its tarball asset. |
 | CI / release workflow | `CI` success on push; `Release` workflow success and skipped publishing because `npm view` already reported `1.0.0`. |
 | Storefront assets | `screenshots.json` + three JPEG screenshots under `docs/screenshots/` (sidebar, table filter, chart). |
 
