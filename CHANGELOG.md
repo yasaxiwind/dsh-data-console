@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.0.3 — 2026-11-26
+
+Dark-theme fixes. The panel now follows DSH's light/dark theme instead of
+falling back to a white surface with light text.
+
+- Replaced the nonexistent `--dsw-alias-bg-l1/l2/l3` tokens with
+  `--dsw-alias-bg-layer-1/2/3` and removed the light-only fallbacks.
+- Primary buttons use `--dsw-alias-label-primary-inverted` for their label, so
+  they stay readable when the brand color flips from near-black to near-white.
+- Links, errors, warnings, the modal mask and input placeholders now use the
+  matching theme tokens.
+- Chart titles, axis labels, grid lines and axis rules follow the theme
+  (`fill`/`stroke` overrides), so charts are readable on dark surfaces.
+- Added dark-mode overrides for the amber session tag and the red error banner.
+
+Screenshots were checked on the default light theme and on
+`body[data-ds-dark-theme]`; no runtime or data behaviour changed.
+
 ## 1.0.2 — 2026-11-24
 
 Screenshots refreshed on the default DSH theme with no third-party skin or

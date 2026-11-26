@@ -229,3 +229,14 @@ Screenshot: `browser-screenshots/dc-110-sidebar-inset.png`.
 | GitHub | https://github.com/yasaxiwind/dsh-data-console — `main` pushed, tag `v1.0.0`, Release with `dsh-data-console-1.0.0.tgz` asset (same SHA-1). |
 | CI / release workflow | `CI` success on push; `Release` workflow success and skipped publishing because `npm view` already reported `1.0.0`. |
 | Storefront assets | `screenshots.json` + three JPEG screenshots under `docs/screenshots/` (sidebar, table filter, chart). |
+
+## M10 (1.0.3) — dark theme
+
+| Item | Result |
+|---|---|
+| Invalid tokens | 18 `--dsw-alias-bg-l1/l2/l3` uses replaced with `--dsw-alias-bg-layer-1/2/3`; no `bg-l*` remains and every used token exists in `design-platform.css`. |
+| Contrast | Primary buttons use `label-primary-inverted`; `dc-linkbtn`/focus/sort accents use `--dsw-alias-link`; error/warn states use `state-error-primary`/`state-warn-primary`; modal mask uses `bg-mask-3`; placeholders use `label-tertiary`. |
+| Charts | SVG titles/labels/grid/axis colors overridden from hardcoded grays to `label-primary`/`label-secondary`/`border-l1`/`border-l2`; heatmap value text keeps its contrast-based white/dark fill. |
+| Dark state | `body[data-ds-dark-theme]` overrides for `.dc-tag` and `.dc-banner`; verified panel `rgb(35,35,36)` with `rgb(249,250,251)` text. |
+| Views checked | Profile, table, SQL, chart, settings and the docked sidebar in dark; profile/table/chart rechecked in light. Rendered in an isolated headless Chrome against a temporary demo profile and the synthetic example CSV; the real profile’s dataset state was restored afterwards. |
+| Files | `client.js` only (+35 / −27), no runtime logic change. Screenshots: `browser-screenshots/dark-profile.png`, `dark-table-real.png`, `dark-chart-real.png`, `dark-settings-real.png`, `dark-sidebar-real.png`, `light-table-real.png`. |
