@@ -4,8 +4,17 @@ node_modules/
 # Local test artifacts and scratch copies
 browser-screenshots/
 scratch/
+dist-release/
 *.tgz
 coverage/
+
+# Local state / backups
+datasets.json
+settings.json
+*.bak
+*.sqlite
+*.db
+.npmrc
 
 # Python
 __pycache__/
