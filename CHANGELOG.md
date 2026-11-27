@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.4 — 2026-11-27
+
+Privacy and repository hygiene cleanup.
+
+- Replaced historical screenshots that contained a user avatar, nickname,
+  theme/skin artifacts and real CNKI paper data with the synthetic example
+  screenshots already used by the current README.
+- Removed local Windows profile paths from `VERIFICATION.md`.
+- Rebuilt the npm and GitHub Release artifacts from the cleaned tree.
+- No runtime behavior changes versus 1.0.3 (the dark-theme fixes remain).
+
 ## 1.0.3 — 2026-11-26
 
 Dark-theme fixes. The panel now follows DSH's light/dark theme instead of

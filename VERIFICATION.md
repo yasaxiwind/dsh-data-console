@@ -1,6 +1,6 @@
 # Data console — M1 verification
 
-Date: 2026-11-24 · DSH 0.2.2-rc.5 (Desktop profile) · plugin 1.0.3
+Date: 2026-11-24 · DSH 0.2.2-rc.5 (Desktop profile) · plugin 1.0.4
 
 ## Installed state
 
@@ -240,3 +240,13 @@ Screenshot: `browser-screenshots/dc-110-sidebar-inset.png`.
 | Dark state | `body[data-ds-dark-theme]` overrides for `.dc-tag` and `.dc-banner`; verified panel `rgb(35,35,36)` with `rgb(249,250,251)` text. |
 | Views checked | Profile, table, SQL, chart, settings and the docked sidebar in dark; profile/table/chart rechecked in light. Rendered in an isolated headless Chrome against a temporary demo profile and the synthetic example CSV; the real profile’s dataset state was restored afterwards. |
 | Files | `client.js` only (+35 / −27), no runtime logic change. Screenshots: `browser-screenshots/dark-profile.png`, `dark-table-real.png`, `dark-chart-real.png`, `dark-settings-real.png`, `dark-sidebar-real.png`, `light-table-real.png`. |
+
+
+## M11 (1.0.4) — privacy cleanup
+
+| Item | Result |
+|---|---|
+| Historical screenshots | Old storefront images containing a user avatar/nickname, skin artifacts and CNKI paper data were replaced across history with the synthetic `examples/regional-sales.csv` screenshots. |
+| Local paths | `C:\Users\<name>` references in `VERIFICATION.md` replaced with `<USERPROFILE>`; repository-wide scan for credentials, private keys and personal paths is clean at HEAD. |
+| Artifacts | npm 1.0.0–1.0.3 and the old release assets were unpublished/rebuilt; 1.0.4 is the clean replacement. |
+| Verification | `npm test`, package verification, tarball inspection and a clean-profile install of 1.0.4. |
