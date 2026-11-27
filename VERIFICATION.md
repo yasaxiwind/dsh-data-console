@@ -248,5 +248,5 @@ Screenshot: `browser-screenshots/dc-110-sidebar-inset.png`.
 |---|---|
 | Historical screenshots | Old storefront images containing a user avatar/nickname, skin artifacts and CNKI paper data were replaced across history with the synthetic `examples/regional-sales.csv` screenshots. |
 | Local paths | `C:\Users\<name>` references in `VERIFICATION.md` replaced with `<USERPROFILE>`; repository-wide scan for credentials, private keys and personal paths is clean at HEAD. |
-| Artifacts | npm 1.0.0–1.0.3 and the old release assets were unpublished/rebuilt; 1.0.4 is the clean replacement. |
+| Artifacts | npm 1.0.4 is the clean replacement; old npm versions await unpublish through the npm website/account 2FA (granular bypass-2FA tokens cannot unpublish). GitHub Release assets were rebuilt from the cleaned tags. |
 | Verification | `npm test`, package verification, tarball inspection and a clean-profile install of 1.0.4. |
